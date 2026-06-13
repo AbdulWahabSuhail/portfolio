@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-gray-100 antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-surface;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-surface-border;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent/50;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto max-w-6xl px-6 py-20 md:px-8;
+  }
+
+  .section-title {
+    @apply mb-2 text-sm font-semibold uppercase tracking-widest text-accent-light;
+  }
+
+  .section-heading {
+    @apply mb-12 text-3xl font-bold tracking-tight text-white md:text-4xl;
+  }
+
+  .glass-card {
+    @apply rounded-2xl border border-surface-border bg-surface-raised/80 backdrop-blur-sm transition-all duration-300;
+  }
+
+  .glass-card:hover {
+    @apply border-accent/30 shadow-lg shadow-accent-glow;
+  }
+
+  .skill-tag {
+    @apply rounded-full border border-surface-border bg-surface-raised px-3 py-1 text-sm text-gray-300 transition-colors hover:border-accent/40 hover:text-accent-light;
+  }
+
+  .nav-link {
+    @apply text-sm text-gray-400 transition-colors hover:text-white;
+  }
+}
