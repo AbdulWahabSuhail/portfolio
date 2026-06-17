@@ -3,7 +3,7 @@ export const profile = {
   title: 'AI Engineer & Full-Stack Developer',
   location: 'Abu Dhabi, UAE',
   email: 'abdulwahabsuhail1234@gmail.com',
-  phone: '+971 325 5736072',
+  phone: '+971 523560680',
   linkedin: 'https://www.linkedin.com/in/abdul-wahab-suhail-b8a68a292',
   github: 'https://github.com/AbdulWahabSuhail',
   portfolio: 'https://abdulwahabsuhail.vercel.app/',
